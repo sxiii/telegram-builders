@@ -1,5 +1,5 @@
-- [x] This repo contains Dockerfile, which creates a container based on "nubs/arch-build" repo and builds telegram-desktop (by utilizing PKGBUILDS, AUR and makepkg) to be installed later on.
-- [x] This repo also includes binary telegram inside Docker image that you can use or export
+- [x] This repo contains Dockerfile, which creates a container based on "nubs/arch-build" repo and builds telegram-desktop for Arch/Manjaro from source (by utilizing PKGBUILDS, AUR and makepkg).
+- [x] This repo also includes binary telegram inside Docker image that you can use or export.
 
 ### telegram-builders
 
