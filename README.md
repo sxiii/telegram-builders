@@ -58,5 +58,7 @@ FROM docker.pkg.github.com/sxiii/telegram-builders/tdw:2.6.1 as tdw
 FROM scratch AS export
 COPY --from=tdw /tele.zst .
 ```
+
 And run this: `DOCKER_BUILDKIT=1 sudo docker build . --output=out && sudo pacman -U ./out/tele.zst`
-Now your telegram is installed to your Arch/Manjaro. ;) Enjoy
+
+Now your telegram is installed to your Arch/Manjaro! ;) Enjoy
