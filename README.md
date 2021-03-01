@@ -1,5 +1,6 @@
 - [x] This repo contains Dockerfile, which creates a container based on "nubs/arch-build" repo and builds telegram-desktop for Arch/Manjaro from source (by utilizing PKGBUILDS, AUR and makepkg).
 - [x] This repo also includes binary telegram inside Docker image that you can use or export.
+- [x] Finally, there is Telegram ZST package that you can install right away into your Arch/Manjaro Linux.
 
 ### telegram-builders
 
