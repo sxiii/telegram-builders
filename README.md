@@ -44,3 +44,6 @@ In a folder "out", as file "tele.zst".
 ### What is the build basis of this?
 1) Dockerfile is in the repo itself
 2) Inside of the Dockerfile, we build by using "nubs/arch-build" Docker Hub image as well as my own PKGBUILD script from here: https://aur.archlinux.org/pkgbase/telegram-desktop-wide/
+
+### Can I add my own build scripts here or improve the project?
+Sure! It's created for everybody. Feel free to create pull requests as well as issues in this repo.
