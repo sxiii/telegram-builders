@@ -5,12 +5,14 @@
 
 The reason behind Docker builds for Telegram is that we want to get a reproducable build of Telegram codebase (with patches as well) that isn't dependent on libraries installed in the host system. 
 
-In other words, I've experienced sometimes conditions when installed libraries and software on host machines, such as with Manjaro, for example, we are unable to build telegram from the same PKGBUILD. But when we take same PKGBUILD to a clean and fresh ArchLinux install, it works perfectly.
+In other words, I've experienced the following: sometimes, with specific versions of libraries and software on host machines, we are unable to build telegram from the same PKGBUILD. But when we take same PKGBUILD to a clean and fresh ArchLinux install, it works perfectly.
 
-So I decided to just continue with Docker containers as they allow us to easily create reproducible containers and use them to build specialized Telegram versions.
+So I decided to just continue with Docker containers as they allow us to easily create reproducible containers and use them to build specialized Telegram versions. 
+
+This repo is intended to be telegram-bleeding-edge version with some tweaks enabled. But if we decide to save the backwards compatibility, we might need to develop a way to feature-freeze or just use older builds from github packages when we need them.
 
 ### What is in this repo?
-* Currently, there's only 1 telegram version and 1 linux target to build.
+* Currently, there's only 1 telegram version and 1 linux target to build (Arch).
 * In the future, this might be expanded to more telegram versions, as well as other linux targets, if needed or desired.
 
 ### Is this vanilla telegram?
