@@ -47,3 +47,13 @@ In a folder "out", as file "tele.zst".
 
 ### Can I add my own build scripts here or improve the project?
 Sure! It's created for everybody. Feel free to create pull requests as well as issues in this repo.
+
+### I don't want to build telegram, can I have binary plz?
+Sure! Just take the package from the container (github packages). Or download, export and install it just like that. Save this as Dockerfile:
+```code=Dockerfile
+FROM docker.pkg.github.com/sxiii/telegram-builders/tdw:2.6.1 as tdw
+FROM scratch AS export
+COPY --from=tdw /tele.zst .
+```
+And run this: `DOCKER_BUILDKIT=1 sudo docker build . --output=out && sudo pacman -U ./out/tele.zst`
+Now your telegram is installed to your Arch/Manjaro. ;) Enjoy
