@@ -52,7 +52,7 @@ In a folder "out", as file "tele.zst".
 Sure! It's created for everybody. Feel free to create pull requests as well as issues in this repo.
 
 ### I don't want to build telegram, can I have binary plz?
-Sure! Just take the package from the container (github packages). Or download, export and install it just like that. Save this as Dockerfile:
+Sure! Just take the package from the container ([github packages](https://github.com/users/sxiii/packages?repo_name=telegram-builders)). Or download, export and install it just like that. Save this as Dockerfile:
 ```code=Dockerfile
 FROM docker.pkg.github.com/sxiii/telegram-builders/tdw:2.6.1 as tdw
 FROM scratch AS export
